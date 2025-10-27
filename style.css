@@ -81,49 +81,53 @@ font-size: 60px;
 /* ========================= */
 /* 📱 Responsive Styles */
 /* ========================= */
+/* ✅ Responsive Fixes */
 @media (max-width: 768px) {
-  .calculator {
-    padding: 30px 20px;
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.3;
   }
 
-  .calculator h1 {
-    font-size: 38px;
-  }
-
-  .input-box {
+  .container {
+    width: 90%;
+    padding: 20px;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
   }
 
-  .input-box input,
-  .input-box button {
+  input[type="date"] {
     width: 100%;
-    font-size: 16px;
+    font-size: 1rem;
+    padding: 10px;
   }
 
-  .input-box button {
-    padding: 14px;
+  button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 10px;
   }
 
   #result {
-    font-size: 18px;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
   }
 }
 
 @media (max-width: 480px) {
-  .calculator h1 {
-    font-size: 32px;
+  h1 {
+    font-size: 1.8rem;
   }
 
-  .container {
-    padding: 10px;
-  }
-
-  .input-box {
-    padding: 20px;
+  input[type="date"],
+  button {
+    font-size: 0.95rem;
   }
 
   #result {
-    font-size: 16px;
+    font-size: 0.9rem;
   }
 }
