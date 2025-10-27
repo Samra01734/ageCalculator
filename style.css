@@ -65,6 +65,65 @@ font-size: 60px;
     background-size: 30px;
     cursor: pointer;
 }
-result span{
-    color:#ffff76
+
+/* Result text */
+#result {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#result span {
+  color: #ffff76;
+  font-weight: 600;
+}
+
+/* ========================= */
+/* 📱 Responsive Styles */
+/* ========================= */
+@media (max-width: 768px) {
+  .calculator {
+    padding: 30px 20px;
+  }
+
+  .calculator h1 {
+    font-size: 38px;
+  }
+
+  .input-box {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .input-box input,
+  .input-box button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .input-box button {
+    padding: 14px;
+  }
+
+  #result {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculator h1 {
+    font-size: 32px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .input-box {
+    padding: 20px;
+  }
+
+  #result {
+    font-size: 16px;
+  }
 }
